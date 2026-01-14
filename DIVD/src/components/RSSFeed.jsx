@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const RSSFeed = ({ feedUrl, maxItems = 3 }) => {
+const RSSFeed = ({ feedUrl, maxItems = 6 }) => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
@@ -14,7 +14,6 @@ const RSSFeed = ({ feedUrl, maxItems = 3 }) => {
         const data = await response.json();
         const latestItems = (data.items || []).slice(0, maxItems);
 
-        // Map each item to an object with title, subtitle, link, imageUrl
         const mappedPosts = latestItems.map((item) => {
           const imageUrlMatch = item.content.match(/<img src="([^"]+)"/);
           return {
@@ -61,8 +60,8 @@ const RSSFeed = ({ feedUrl, maxItems = 3 }) => {
             </div>
           )}
           <div className="p-4 post_meta_data">
-            <h3 className="text-lg font-semibold mb-2">{post.title}</h3>
-            <p className="text-gray-700 text-sm">{post.subtitle}</p>
+            <h3 className="text-lg text-amber-300 font-semibold mb-2">{post.title}</h3>
+            <p className="text-white text-sm">{post.subtitle}</p>
           </div>
         </a>
       ))}
