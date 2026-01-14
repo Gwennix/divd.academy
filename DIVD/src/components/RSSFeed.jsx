@@ -51,15 +51,15 @@ const RSSFeed = ({ feedUrl, maxItems = 6 }) => {
           className="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow flex flex-col"
         >
           {post.imageUrl && (
-            <div className="post_image_wrapper">
+            <div>
               <img
                 src={post.imageUrl}
                 alt={post.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-24 object-cover"
               />
             </div>
           )}
-          <div className="p-4 post_meta_data">
+          <div className="p-5 post_meta_data">
             <h3 className="text-lg text-amber-300 font-semibold mb-2">{post.title}</h3>
             <p className="text-white text-sm">{post.subtitle}</p>
           </div>

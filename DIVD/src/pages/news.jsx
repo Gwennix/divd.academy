@@ -7,7 +7,7 @@ export default function News() {
     <div className="page-container p-6">
       <h1 className="text-3xl font-bold mb-8 text-center">News</h1>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div className="">
         <div>
           <RSSFeed feedUrl={feedUrl} maxItems={6} />
         </div>
