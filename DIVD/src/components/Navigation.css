@@ -1,0 +1,92 @@
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #1C1C1C;
+        border-bottom: 1px solid #ddd;
+        z-index: 1000;
+        font-family: Nunito, Arial;
+    }
+
+    .navbar-left {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        color: white;
+        font-size: 1.25rem;
+        font-weight: bold;
+        font-family: 'Castoro Titling', serif;
+    }
+
+    .favicon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .navbar-right {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .nav-link:hover {
+        color: #cccccc;
+    }
+
+    .search-form {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    .search-input {
+        padding: 0.5rem 1rem;
+        border: 1px solid #555;
+        border-radius: 4px;
+        background-color: #333;
+        color: white;
+        font-family: Nunito, Arial;
+        font-size: 0.95rem;
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+    }
+
+    .search-input::placeholder {
+        color: #999;
+    }
+
+    .search-input:focus {
+        outline: none;
+        background-color: #444;
+        border-color: #777;
+    }
+
+    .search-btn {
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    .search-btn:hover {
+        color: #cccccc;
+    }
