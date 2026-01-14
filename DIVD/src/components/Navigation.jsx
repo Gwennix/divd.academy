@@ -22,7 +22,7 @@ export default function Navigation() {
 
             <div className="navbar-right">
                 <Link to="/" className="nav-link">Home</Link>
-                <Link to="/Projects" className="nav-link">News</Link>
+                <Link to="/News" className="nav-link">News</Link>
                 <Link to="/AboutUs" className="nav-link">About</Link>
                 <Link to="/FAQ" className="nav-link">FAQ</Link>
                 <Link to="/Careers" className="nav-link">Careers</Link>
