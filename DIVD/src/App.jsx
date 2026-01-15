@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
 import News from "./pages/news";
+import Newsarchive from "./pages/newsarchive";
 import FAQ from "./pages/FAQ";
 import AboutUs from "./pages/AboutUs";
 import Careers from "./pages/Careers";
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/News" element={<News />} />
+        <Route path="/Newsarchive" element={<Newsarchive/>} />
         <Route path="/FAQ" element={<FAQ />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/Careers" element={<Careers />} />

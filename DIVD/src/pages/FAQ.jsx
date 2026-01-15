@@ -5,11 +5,24 @@ import faq3 from '../assets/faq3.png';
 import FAQList from '../components/Faqmapper';
 
 export default function FAQ() {
-  const [category, setCategory] = useState(null); // null = show all
+  const [category, setCategory] = useState(null);
+  const [language, setLanguage] = useState("nl");
+
+  const toggleLanguage = () => {
+    setLanguage(prev => (prev === "nl" ? "en" : "nl"));
+  };
 
   return (
     <div className="min-h-screen p-8 flex flex-col items-center">
-      <div className='font-bold mb-10 text-xl'>Frequently Asked Questions</div>
+      <div className="flex items-center justify-between w-full max-w-6xl mb-10">
+        <div className='font-bold text-xl'>Frequently Asked Questions</div>
+        <button
+          onClick={toggleLanguage}
+          className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+        >
+          {language === "nl" ? "Switch to English" : "Switch to Dutch"}
+        </button>
+      </div>
 
       <div className="flex gap-10 mb-12">
         <div
@@ -34,7 +47,7 @@ export default function FAQ() {
         </div>
       </div>
 
-      <FAQList selectedCategory={category} />
+      <FAQList selectedCategory={category} language={language} />
 
     </div>
   );
