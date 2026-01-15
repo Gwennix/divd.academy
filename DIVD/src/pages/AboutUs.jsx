@@ -26,14 +26,11 @@ export default function AboutUs() {
           We provide a mix of beginner-friendly and advanced courses designed by experienced professionals.
         </p>
         <p>
-          At DIVD.works, we are committed to nurturing the next generation professionals through our comprehensive Internship Program.
-        </p>
-        <p>
           DIVD Academy is a safe place where both novice and experienced researchers can connect to learn from each other.
         </p>
       </div>
 
-      {/* EMPLOYEES */}
+      {/* Highlighted Employees*/}
       <div className="w-full max-w-5xl mb-16">
         <h2 className="text-3xl font-bold text-[#FFD736] mb-8 text-center">
           Highlighted Employees
@@ -41,7 +38,6 @@ export default function AboutUs() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           
-          {/* Employee Victor Gevers */}
           <div className="flex flex-col items-center text-center">
             <img
               src="/images/Victor.jpg"
@@ -52,7 +48,6 @@ export default function AboutUs() {
             <p className="text-gray-400 text-sm">CTO</p>
           </div>
 
-          {/* Employee Astrid Oosenbrug */}
           <div className="flex flex-col items-center text-center">
             <img
               src="/images/Astrid.jpg"
@@ -63,9 +58,34 @@ export default function AboutUs() {
             <p className="text-gray-400 text-sm">Co-Founder & CEO</p>
           </div>
 
+          <div className="flex flex-col items-center text-center">
+            <img
+              src="/images/Ronald.jpg"
+              alt="Employee 3"
+              className="w-32 h-32 rounded-full object-cover mb-4"
+            />
+            <p className="font-semibold text-white">Ronald Stienstra</p>
+            <p className="text-gray-400 text-sm">CFO</p>
+          </div>
+
           
 
         </div>
+      </div>
+
+      {/* The benefits of joining DIVD */}
+      <div className="w-full max-w-4xl mb-16">
+        <h2 className="text-3xl font-bold text-[#FFD736] mb-6 text-center">
+          Benefits of joining
+        </h2>
+
+        <ul className="list-disc list-inside text-gray-200 text-lg space-y-3">
+          <li>Acquire and enhance essential hard and soft skills vital for a career in cybersecurity.</li>
+          <li>Gain practical experience working within an international organization.</li>
+          <li>Receive a certificate upon successful completion of the program.</li>
+          <li>Connect with a network of motivated and like-minded individuals worldwide.</li>
+          <li>Improve your English proficiency in a professional setting.</li>
+        </ul>
       </div>
 
       {/* Contact info */}
@@ -75,7 +95,7 @@ export default function AboutUs() {
       </div>
 
       {/* Streep */}
-      <div className="w-24 h-1 bg-white opacity-30 rounded"></div>
+      <div className="footer-line"></div>
     </div>
   );
 }
