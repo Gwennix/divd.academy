@@ -50,7 +50,7 @@ export default function Navigation() {
                             <Link to="/AboutUs" className="nav-link">About</Link>
                             <Link to="/FAQ" className="nav-link">FAQ</Link>
                             <Link to="/Careers" className="nav-link">Careers</Link>
-                            <Link to="/Course" className="nav-link">Courses</Link>
+                            <Link to="/Courses" className="nav-link">Courses</Link>
                         </>
                     )}
 
@@ -82,7 +82,7 @@ export default function Navigation() {
                     <Link to="/AboutUs" className="mobile-menu-link" onClick={closeMenu}>About</Link>
                     <Link to="/FAQ" className="mobile-menu-link" onClick={closeMenu}>FAQ</Link>
                     <Link to="/Careers" className="mobile-menu-link" onClick={closeMenu}>Careers</Link>
-                    <Link to="/Course" className="mobile-menu-link" onClick={closeMenu}>Courses</Link>
+                    <Link to="/Courses" className="mobile-menu-link" onClick={closeMenu}>Courses</Link>
                 </div>
             )}
         </>
