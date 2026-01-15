@@ -14,7 +14,7 @@ function CourseCard({ title, image, link }) {
         />
       </div>
 
-      {/* Info */}
+      {/* Info //}
       <div className="p-4">
         <h3 className="text-xl font-semibold text-white group-hover:text-yellow-400 transition">
           {title}

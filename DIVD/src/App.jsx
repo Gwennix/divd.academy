@@ -3,7 +3,7 @@ import Courses from "./pages/Courses.jsx";
 import './App.css';
 
 
-// Homepage component
+
 function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#0e0e0e] text-white p-6">
@@ -21,13 +21,13 @@ function Home() {
   );
 }
 
-// Main App with routing
+// Main App met routing
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/courses" element={<Courses />} />
-      {/* Onbekende routes → terug naar homepage */}
+      {/* Onbekende routes = terug naar homepage */}
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );

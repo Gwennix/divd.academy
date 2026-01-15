@@ -1,21 +1,31 @@
-/* Algemene pagina kleuren */
+
 body {
-  background-color: #1C1C1C; /* divdBlack */
-  color: #FFFFFF;            /* divdWhite */
+  background-color: #1C1C1C; 
+  color: #FFFFFF;            
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Titel bovenin */
+/* Titel /*/
 .page-title {
   text-align: center;
   font-size: 3rem;
-  color: #FFD736; /* divdYellow */
+  color: #FFD736; 
   margin: 40px 0;
 }
 
-/* Container voor links + afbeeldingen */
+.page-subtitle {
+  text-align: center;
+  font-size: 1.5rem;      
+  color: #FFD736;         
+  margin-top: 20px;
+  margin-bottom: -10px;   
+  font-weight: 500;
+}
+
+
+/* Links en afbeeldingen */
 .courses-container {
   display: flex;
   flex-wrap: wrap;
@@ -75,9 +85,9 @@ body {
 
 
 .footer-line {
-  height: 2px;              /* dunne streep */
+  height: 2px;              /* streep */
   width: 80%;              
-  background-color: #FFFFFF; /* wit */
+  background-color: #FFFFFF; 
   margin: 40px auto;        
   border-radius: 1px;       
 }
@@ -89,6 +99,14 @@ body {
   }
 
   .course-images {
-    grid-template-columns: repeat(2, 1fr); /* 2 afbeeldingen per rij op mobiel */
+    grid-template-columns: repeat(2, 1fr); /* 2 afbeeldingen per rij voor responsive */
   }
+  .course-subtitle {
+  color: #FFD736 !important;  
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+
 }
