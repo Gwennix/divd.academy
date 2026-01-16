@@ -52,8 +52,8 @@ export default function AboutUs() {
     {
       id: "bitacedmy",
       name: "Bit Academy",
-      description: "De ICT opleiding voor studenten die een échte uitdaging willen op het MBO.",
-      more: "Werken met de nieuwste tech en zelf je studie richting kiezen. Leren door zelf actief bezig te zijn, individueel opdrachten te doen of samen te werken in teams.",
+      description: "The IT program for students who want a real challenge at the vocational level (MBO).",
+      more: "Working with the latest tech and choosing your own study direction. Learning by actively engaging, completing individual assignments, or collaborating in teams.",
     },
     {
       id: "ecp",
@@ -74,7 +74,7 @@ export default function AboutUs() {
     
   ];
 
-  // Expended partner 
+  // Voor de uitbreiding partner partner 
   const [expandedPartner, setExpandedPartner] = useState(null);
 
   return (
@@ -157,7 +157,7 @@ export default function AboutUs() {
         <h2 className="text-3xl font-bold text-[#FFD736] mb-8 text-center">
           Our Partners
         </h2>
-
+{/* partners uitwerking */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {partners.map((partner) => (
             <div
@@ -166,14 +166,15 @@ export default function AboutUs() {
               onClick={() =>
                 setExpandedPartner(expandedPartner === partner.id ? null : partner.id)
               }
-            >
+            > 
+            {/* Partner beschrijving */}
               <h3 className="text-xl font-semibold text-[#FFD736] mb-2">
                 {partner.name}
               </h3>
               <p className="text-gray-300">{partner.description}</p>
               <p className="text-sm text-gray-500 mt-2">Click here to read more →</p>
 
-              {/* Expanded detail of the partner */}
+              {/* Uitgebreide details van de partners */}
               {expandedPartner === partner.id && (
                 <div className="mt-4 p-4 bg-white/5 rounded text-gray-200 text-sm transition-all duration-300">
                   {partner.more}
@@ -189,6 +190,23 @@ export default function AboutUs() {
         <p>📍 Maanweg 174, 2516AB Den Haag, Netherlands</p>
         <p>📞 070 419 0309</p>
       </div>
+
+      {/* Routebeschrijving*/}
+<div className="max-w-4xl text-gray-200 text-lg text-center mb-10">
+  <h2 className="text-2xl font-bold text-[#FFD736] mb-4">Wanna Visit us?</h2>
+  <p>
+    Plan your route to DIVD Academy now! click the link below to find out how to get to our location:
+  </p>
+  <a
+    href="https://www.google.com/maps/dir/Schiedamseweg+245,+Schiedam/Maanweg+174,+2516+AB+Den+Haag/@51.9957834,4.209198,11z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x47c4355c7dc5b3cb:0x6658c91aee1bf9c2!2m2!1d4.3838406!2d51.9238104!1m5!1m1!1s0x47c5b653499b0f4d:0xa562357cf26c3c5!2m2!1d4.3533434!2d52.0679866?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-[#FFD736] underline mt-2 inline-block"
+  >
+    Open in Google Maps
+  </a>
+</div>
+
 
        {/* Streep */}
       <div className="footer-line"></div>
