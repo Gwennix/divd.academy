@@ -26,7 +26,52 @@ export default function AboutUs() {
       name: "National Police Force",
       description: "There is one national police force in the Netherlands, lead by one Commissioner.",
       more: "The force consists of ten Regional Units and one Central Unit, each with its own Chief Constable.",
+    },
+
+    {
+      id: "themuncipalityofthehague",
+      name: "The municipality Of The Hague",
+      description: "The municipality of The Hague has many faces",
+      more: "international city of peace and justice, Royal residence, European city and multicultural hub.",
+    },
+
+    {
+      id: "eset",
+      name: "ESET",
+      description: "For three decades and counting, ESET and its founding engineers have facilitated cutting-edge innovation across the digital security sector.",
+      more: "Staying privately owned allows us to maintain our independence and focus on our primary goal—providing exemplary digital life protection for home and business. ",
+    },
+
+     {
+      id: "sidnfonds",
+      name: "SIDN Fonds",
+      description: "A strong internet for all. That's what SIDN Fund stands for.",
+      more: "We invest in bold projects with added societal value that contribute to a strong internet, strong internet users, or that focus on the internet's significance for public values and society.",
+    },
+
+    {
+      id: "bitacedmy",
+      name: "Bit Academy",
+      description: "De ICT opleiding voor studenten die een échte uitdaging willen op het MBO.",
+      more: "Werken met de nieuwste tech en zelf je studie richting kiezen. Leren door zelf actief bezig te zijn, individueel opdrachten te doen of samen te werken in teams.",
+    },
+    {
+      id: "ecp",
+      name: "ECP",
+      description: "For three decades and counting, ESET and its founding engineers have facilitated cutting-edge innovation across the digital security sector.",
+      more: "Staying privately owned allows us to maintain our independence and focus on our primary goal—providing exemplary digital life protection for home and business. ",
+    },
+
+    {
+      id: "government",
+      name: "Government Of The Netherlands",
+      description: "The Government Of The Netherlands",
+      more: "The Government Of The Netherlands",
     }
+    
+    
+
+    
   ];
 
   // Expended partner 
@@ -110,7 +155,7 @@ export default function AboutUs() {
       {/* Our  DIVD Partners */}
       <div className="w-full max-w-5xl mb-16">
         <h2 className="text-3xl font-bold text-[#FFD736] mb-8 text-center">
-          A few of our Partners
+          Our Partners
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -145,8 +190,8 @@ export default function AboutUs() {
         <p>📞 070 419 0309</p>
       </div>
 
-      {/* Streep */}
-      <div className="w-24 h-1 bg-white opacity-30 rounded"></div>
+       {/* Streep */}
+      <div className="footer-line"></div>
     </div>
   );
 }
