@@ -58,7 +58,7 @@ function Courses() {
 
           {/* Development */}
           <div className="course-subtitle" style={{ marginTop: '16px' }}>Development</div>
-
+{/* Development links */}
           {devLinks.map((link, idx) => (
             <a
               key={idx}
@@ -72,7 +72,7 @@ function Courses() {
 
         </div>
 
-        {/* Afbeeldingen */}
+        {/* Afbeeldingen en Course Cards */}
         <div className="course-images">
           {courseImages.map((course, idx) => (
             <div key={idx} className="course-card">
