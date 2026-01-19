@@ -69,7 +69,7 @@ export default function Careers() {
       <div className="h-0.5 max-w-7xl bg-white my-15 mx-auto rounded"></div>
 
       <section className="max-w-7xl mx-auto px-5 md:flex-row gap-12 items-center">
-        <div className="career-card gap-12 flex flex-col md:flex-row p-6 rounded-xl bg-[#161615] shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-200 mb-10">
+        <div className="career-card gap-12 flex flex-col md:flex-row p-6 rounded-xl bg-[#161615] hover:border-[#ffd736] shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-200 mb-10">
           <img
             src="/images/career6.png"
             className="w-full h-auto rounded-lg mb-4 flex items-center justify-center"

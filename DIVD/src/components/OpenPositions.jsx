@@ -12,7 +12,7 @@ export default function OpenPositions({ refs }) {
         {jobs.map((job, index) => (
           <div
             key={index}
-            className="p-1 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-200 bg-[#161615]"
+            className="p-1 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 hover:border-[#ffd736] border border-gray-200 bg-[#161615]"
           >
             <img
               src={job.image}

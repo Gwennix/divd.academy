@@ -41,7 +41,7 @@ const RSSFeed = ({ feedUrl, maxItems = 6 }) => {
   if (!posts.length) return <p>No posts available.</p>;
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
       {posts.map((post, index) => (
         <a
           key={index}
