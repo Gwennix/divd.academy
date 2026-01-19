@@ -5,8 +5,8 @@ body {
 }
 
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 100vw;
+  margin: 0 0;
   padding: 2rem;
   padding-top: 6rem;
   text-align: center;
@@ -50,9 +50,8 @@ body {
 .read-the-docs {
   color: #888;
 }
-
 body {
-  background-color: #1C1C1C;
+  background: linear-gradient(to bottom, #111827, #1f2937);
   color: #FFFFFF;
   font-family: Arial, sans-serif;
   margin: 0;
@@ -171,4 +170,28 @@ body {
   }
 
 
+}
+
+.career-container{
+  margin: 40px 15vw;
+
+}
+
+.career-header{
+  display: flex;
+  width: 100%;
+  text-align: left;
+}
+
+.career-header img{
+  height: 300px;
+  margin-right: 40px;
+}
+
+.career-htext{
+  padding: 20px 0;
+}
+
+.career-htext h1{
+  margin-bottom: 40px;
 }
