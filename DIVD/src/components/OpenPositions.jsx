@@ -1,5 +1,6 @@
 // components/OpenPositions.jsx
 import jobs from "../data/Jobs";
+import { scroller } from 'react-scroll';
 
 export default function OpenPositions({ refs }) {
   return (
@@ -18,9 +19,13 @@ export default function OpenPositions({ refs }) {
               alt=""
             />
             <li className="text-xl font-semibold mb-2 list-none underline cursor-pointer"
-             onClick={() =>
-              refs[job.slug].current.scrollIntoView({ behavior: "smooth" })
-            }
+              onClick={() => {
+                scroller.scrollTo(job.slug, {
+                  smooth: true,
+                  offset: -50,
+                  duration: 500,
+                });
+              }}
             >
               {job.title}
             </li>

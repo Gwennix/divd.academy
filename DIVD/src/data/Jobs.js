@@ -1,7 +1,7 @@
 const jobs = [
   {
     image: "/images/career1.png",
-    image2: "/images/career1-2.png",
+    image2: "/images/career1.1.png",
     title: "Head of Education",
     slug: "head-of-education",
     text: "We are searching for a Head of Education to develop new curricula and improve teaching practices across the DIVD Academy.",
@@ -49,7 +49,7 @@ const jobs = [
 
   {
     image: "/images/career2.png",
-    image2: "/images/career2-1.png",
+    image2: "/images/career2.1.png",
     title: "Internship / Trainee Supervisor",
     slug: "internship-trainee-supervisor",
     text: "We are looking for a reliable and trustworthy internship/trainee supervisor to join our team.",
@@ -87,7 +87,7 @@ const jobs = [
 
   {
     image: "/images/career3.png",
-    image2: "/images/career3-1.png",
+    image2: "/images/career3.1.png",
     title: "Trainee Supervisors [Dutch]",
     slug: "trainee-supervisors-dutch",
     text: "We zijn altijd op zoek naar enthousiaste stage-/trainee supervisors om ons team te versterken.",
@@ -131,7 +131,7 @@ const jobs = [
 
   {
     image: "/images/career4.png",
-    image2: "/images/career4-1.png",
+    image2: "/images/career4.1.png",
     title: "Volunteer",
     slug: "volunteer",
     text: "We are looking for trustworthy and committed volunteers who want to support our mission and help build meaningful learning experiences at DIVD Academy.",
@@ -168,7 +168,7 @@ const jobs = [
 
   {
     image: "/images/career5.png",
-    image2: "/images/career5-1.png",
+    image2: "/images/career5.1.png",
     title: "Internship / Trainee",
     slug: "internship-trainee",
     text: "We are looking for reliable and motivated interns and trainees who want to learn, grow, and contribute to DIVD Academy.",

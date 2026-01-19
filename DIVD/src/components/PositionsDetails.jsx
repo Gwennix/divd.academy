@@ -15,7 +15,7 @@ const markdownComponents = {
   blockquote: ({ children }) => <blockquote className="border-l-4 border-gray-300 pl-4 italic mb-4">{children}</blockquote>,
   code: ({ children }) => <code className="bg-gray-100 px-2 py-1 rounded text-sm font-mono">{children}</code>,
   pre: ({ children }) => <pre className="bg-gray-100 p-4 rounded overflow-x-auto mb-4">{children}</pre>,
-  a: ({ href, children }) => <a href={href} className="text-blue-600 hover:text-blue-800 underline">{children}</a>,
+  a: ({ href, children }) => <a href={href} className="text-white hover:text-blue-800 underline">{children}</a>,
   strong: ({ children }) => <strong className="font-semibold">{children}</strong>,
   em: ({ children }) => <em className="italic">{children}</em>,
 };
@@ -28,11 +28,12 @@ export default function PositionDetails({ refs }) {
           <div
             key={job.slug}
             ref={refs[job.slug]}
+            id={job.slug}
             className="p-1 rounded-xl transition-shadow duration-300"
           >
             <img
               src={job.image2}
-              className="w-full h-auto rounded-lg mb-4"
+              className=" h-auto rounded-lg mb-4"
               alt={job.title}
             />
 
