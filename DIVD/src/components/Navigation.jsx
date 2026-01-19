@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navigation.css';
 import faviconImg from '../assets/Divd-academy.svg';
@@ -7,6 +7,15 @@ export default function Navigation() {
     const [searchQuery, setSearchQuery] = useState('');
     const [isSearchActive, setIsSearchActive] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     const handleSearch = (e) => {
         e.preventDefault();
@@ -28,7 +37,7 @@ export default function Navigation() {
 
     return (
         <>
-            <nav className="navbar">
+            <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
                 <div className="navbar-left">
                     <button className="burger-menu" onClick={toggleMenu} aria-label="Toggle menu">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

@@ -12,14 +12,14 @@ export default function Careers() {
 
   return (
     <div className="w-full">
-      <header className="py-10 text-center text-white">
-        <h1 className="text-5xl font-extrabold tracking-tight">Careers</h1>
+      <header className="py-10 text-center">
+        <h1 className="text-5xl font-bold text-[#ffd736] tracking-tight">Careers</h1>
         <p className="mt-4 text-lg max-w-2xl mx-auto">
           Join the mission. Help secure the digital world.
         </p>
       </header>
 
-      <section className="max-w-7xl mx-auto px-5 py-10 flex flex-col md:flex-row gap-12 items-center">
+      <section className="max-w-7xl mx-auto px-5 py-1 flex flex-col md:flex-row gap-12 items-center">
         <img
           src="/images/oppertunity.png"
           alt="Opportunity"
@@ -27,7 +27,7 @@ export default function Careers() {
         />
 
         <div className="md:w-1/2">
-          <h2 className="text-4xl text-left font-bold mb-4">
+          <h2 className="text-4xl text-[#ffd736] text-left font-bold mb-4">
             Opportunity Knocks
           </h2>
           <p className="text-lg text-left leading-relaxed">
@@ -69,7 +69,7 @@ export default function Careers() {
       <div className="h-0.5 max-w-7xl bg-white my-15 mx-auto rounded"></div>
 
       <section className="max-w-7xl mx-auto px-5 md:flex-row gap-12 items-center">
-        <div className="career-card gap-12 flex flex-col md:flex-row p-6 rounded-xl bg-[#1C1C1C] shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-200 mb-10">
+        <div className="career-card gap-12 flex flex-col md:flex-row p-6 rounded-xl bg-[#161615] shadow-md hover:shadow-xl transition-shadow duration-300 border border-gray-200 mb-10">
           <img
             src="/images/career6.png"
             className="w-full h-auto rounded-lg mb-4 flex items-center justify-center"

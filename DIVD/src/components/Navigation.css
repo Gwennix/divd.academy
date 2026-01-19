@@ -6,11 +6,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 2rem;
-        background-color: #1C1C1C;
-        border-bottom: 1px solid #ddd;
+        padding: 0.5rem 2rem;
+        background-color: transparent;
         z-index: 1000;
         font-family: Nunito, Arial;
+        transition: background-color 0.05s , border-bottom 0.05s;
+    }
+
+    .navbar.scrolled {
+        background-color: #161615;
+        border-bottom: 1px solid #ddd;
     }
 
     .navbar-left {
@@ -30,8 +35,8 @@
     }
 
     .favicon {
-        width: 150px;
-        height: 32px;
+        width: 140px;
+        height: 40px;
     }
 
     .navbar-right {
