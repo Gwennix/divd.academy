@@ -8,6 +8,7 @@ import FAQ from "./pages/FAQ";
 import AboutUs from "./pages/AboutUs";
 import Careers from "./pages/Careers";
 import Courses from "./pages/Courses";
+import SearchResults from "./pages/SearchResults";
 import NoPage from "./pages/NoPage";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/Careers" element={<Careers />} />
         <Route path="/Courses" element={<Courses />} />
+        <Route path="/Search" element={<SearchResults />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </div>
